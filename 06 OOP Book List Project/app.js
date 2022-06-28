@@ -42,7 +42,7 @@ UI.prototype.clearFields = function () {
     document.getElementById('isbn').value = '';
 };
 
-// Event listeners
+// Event listener for Book Form
 document.getElementById('book-form').addEventListener('submit', function (e) {
     e.preventDefault();
     // Get form values
@@ -71,4 +71,11 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
 
     // Clear input fields
     ui.clearFields();
+});
+
+// Event listener for delete
+document.querySelector('.book-list').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    console.log(e);
 });
