@@ -25,8 +25,7 @@ UI.prototype.addBookToList = function (book) {
 // Show Alert
 UI.prototype.showAlert = function (message, className) {
     // Create div
-    const div = `<div class="popUpDiv ${className}">${message}</
-    }div>`;
+    const div = `<div class="popUpDiv ${className}">${message}</div>`;
     const body = document.querySelector('body');
     body.insertAdjacentHTML('afterbegin', div);
     setTimeout(function () {
