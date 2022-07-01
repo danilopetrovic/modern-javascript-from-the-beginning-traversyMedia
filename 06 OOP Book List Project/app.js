@@ -17,7 +17,7 @@ UI.prototype.addBookToList = function (book) {
 <td>${book.title}</td>
 <td>${book.author}</td>
 <td>${book.isbn}</td>
-<td><a href="#" className="delete">X</a></td>
+<td><a href="#" class="delete">X</a></td>
 </tr>`;
     list.insertAdjacentHTML('beforeend', row);
 };
@@ -32,6 +32,14 @@ UI.prototype.showAlert = function (message, className) {
     setTimeout(function () {
         document.querySelector('.popUpDiv').remove()
     }, 2000)
+};
+
+// Delete Book
+UI.prototype.deleteBook = function (target) {
+    // console.log(target);
+    if (target.className === 'delete') {
+        target.closest('tr').remove();
+    }
 };
 
 // Clear input Fields
@@ -77,5 +85,12 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
 document.querySelector('.book-list').addEventListener('click', function (e) {
     e.preventDefault();
 
-    console.log(e);
+    // Instantiate UI
+    const ui = new UI();
+
+    // Delete book from DOM
+    ui.deleteBook(e.target);
+
+    // Show message of removed book
+    ui.showAlert('Book removed', 'success')
 });
