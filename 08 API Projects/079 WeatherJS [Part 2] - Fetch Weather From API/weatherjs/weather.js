@@ -12,9 +12,8 @@ class Weather {
         // const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${this.apiKey} &q=${this.state}&aqi=yes`);
 
         const responseData = await response.json();
-        return {
-            response: responseData.current
-        };
+        return responseData.current;
+
     }
 
     // Change weather location
