@@ -17,9 +17,9 @@ class Ui {
     paint(data) {
         const location = data.location;
         const current = data.current;
-        // console.log(current);
+        // console.log(location, '-------------------------------', current);
 
-        this.location.textContent = `${location.country} / ${location.name}`;
+        this.location.textContent = `${location.country} - ${location.name}`;
         this.desc.textContent = current.condition.text;
         this.string.textContent = `${current.temp_c}° C`;
         this.icon.setAttribute('src', 'http:' + current.condition.icon);
