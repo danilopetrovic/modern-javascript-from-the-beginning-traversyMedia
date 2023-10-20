@@ -36,13 +36,19 @@ class Ui {
         return this.citySearchInput.value.trim();
     }
 
+    setCityInputValue(locationDatasetFromList) {
+        // console.log(locationDatasetFromList)
+        this.citySearchInput.value = locationDatasetFromList;
+        this.cityList.innerHTML = "";
+    }
+
     listCityResults(data) {
         // console.log(this.citySearchInput, this.cityList);
         let output = this.cityList.innerHTML;
         output = "";
         data.forEach(entry => {
             // console.log(entry);
-            const li = `<li onclick="console.log(this.dataset.url)" data-url="${entry.url}" class="list-group-item  list-group-item-custom">${entry.name} - ${entry.country} - ${entry.region}</li>`;
+            const li = `<li onclick="setLocationFromInputSearch(this)" data-url="${entry.url}" data-country="${entry.country}" data-city="${entry.name}" data-region="${entry.region}" class="list-group-item  list-group-item-custom">${entry.name} - ${entry.country} - ${entry.region}</li>`;
             output += li;
         });
         this.cityList.innerHTML = output;

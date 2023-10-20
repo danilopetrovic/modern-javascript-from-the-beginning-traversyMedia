@@ -13,7 +13,7 @@ document.getElementById('refresh').addEventListener('click', () => {
 // Saving results
 document.getElementById('w-change-btn').addEventListener('click', () => {
     // Change location
-    // weather.changeLocation('Serbia', 'Belgrade', 'URL');
+    // weather.changeLocation('Serbia', 'Belgrade', 'Central Serbia', 'URL');
 });
 
 // Searching city
@@ -61,4 +61,19 @@ function getInputSearch() {
             ui.listCityResults(data);
         })
         .catch(err => console.log(err));
+}
+
+function setLocationFromInputSearch(locationDatasetFromList) {
+    // console.log(locationDatasetFromList);
+    const innerHTML = locationDatasetFromList.innerHTML;
+    const country = locationDatasetFromList.dataset.country;
+    const city = locationDatasetFromList.dataset.city;
+    const region = locationDatasetFromList.dataset.region;
+    const url = locationDatasetFromList.dataset.url;
+
+    ui.setCityInputValue(innerHTML);
+
+    // console.warn(country, city, region, url)
+    weather.changeLocation(country, city, region, url);
+    getWeather();
 }

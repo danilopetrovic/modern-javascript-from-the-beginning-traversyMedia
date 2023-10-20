@@ -1,28 +1,32 @@
 // TODO: make a loader/spinner while fetching getCities() results...
 class Weather {
-    constructor(state, city) {
+    constructor(country, city, region, url) {
         // https://www.weatherapi.com/api-explorer.aspx
         this.apiKey = '609c6c0e2a2e4d4fbac150629231610';
-        this.state = state;
+        this.country = country;
         this.city = city;
-        this.url;
+        this.region = region;
+        this.url = url;
         this.inputText;
     }
 
     // Fetch weather from API
     async getWeather() {
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=belgrade-central-serbia-serbia&days=1&aqi=yes&alerts=yes`);
-        // const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=609c6c0e2a2e4d4fbac150629231610 &q=Serbia&aqi=yes`);
-        // const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${this.apiKey} &q=${this.state}&aqi=yes`);
+        let url = `http://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=belgrade-central-serbia-serbia&days=1&aqi=yes&alerts=yes`;
+        if (this.url) {
+            url = `http://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=${this.url}&days=1&aqi=yes&alerts=yes`;
+        }
+        const response = await fetch(url);
 
         const responseData = await response.json();
         return responseData;
     }
 
     // Change weather location
-    changeLocation(state, city, url) {
-        this.state = state;
+    changeLocation(country, city, region, url) {
+        this.country = country;
         this.city = city;
+        this.region = region;
         this.url = url;
     }
 
