@@ -48,7 +48,13 @@ function getWeather() {
 
 function getInputSearch() {
     // console.warn('odlozeno');
-    weather.getCities(ui.getCityInputValue())
+    const recivedValue = ui.getCityInputValue();
+    if (recivedValue === "" || recivedValue === null) {
+        console.log(`Value of input "city-search-input" is null!`);
+
+        return false;
+    }
+    weather.getCities(recivedValue)
         .then(data => {
             console.log(data);
 

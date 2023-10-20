@@ -30,6 +30,9 @@ class Ui {
     }
 
     getCityInputValue() {
+        if (this.citySearchInput.value.trim() === "") {
+            this.citySearchInput.placeholder = "Type City or Country name...";
+        }
         return this.citySearchInput.value.trim();
     }
 
