@@ -6,6 +6,9 @@ const ui = new Ui();
 
 // Get Weather on DOM load
 document.addEventListener('DOMContentLoaded', getWeather);
+document.getElementById('refresh').addEventListener('click', () => {
+    getWeather();
+});
 
 // Saving results
 document.getElementById('w-change-btn').addEventListener('click', () => {
