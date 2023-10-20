@@ -1,19 +1,14 @@
-// Init weather object
-const weather = new Weather('Serbia', 'Belgrade');
-
 // Init Ui object
 const ui = new Ui();
+// Init Storage object
+const storage = new Storage();
+// Init weather objectcountry, city, region, url
+const weather = new Weather(storage.getLocationData);
 
 // Get Weather on DOM load
 document.addEventListener('DOMContentLoaded', getWeather);
 document.getElementById('refresh').addEventListener('click', () => {
     getWeather();
-});
-
-// Saving results
-document.getElementById('w-change-btn').addEventListener('click', () => {
-    // Change location
-    // weather.changeLocation('Serbia', 'Belgrade', 'Central Serbia', 'URL');
 });
 
 // Searching city
@@ -26,7 +21,6 @@ document.getElementById('city-search-input').addEventListener('keyup', () => {
 // Preventing submitting form
 document.getElementById('w-form').addEventListener('submit', (e) => {
     e.preventDefault();
-    // console.info('Submit Prevented!');
 });
 
 // Focus on city search input after clicking change location
@@ -37,7 +31,9 @@ document.getElementById('change-location').addEventListener('click', () => {
 });
 
 function getWeather() {
-    weather.getWeather()
+    const url = storage.getLocationData();
+    console.log('from app ', url);
+    weather.getWeather(url)
         .then(data => {
             // console.log(data);
 
@@ -51,7 +47,6 @@ function getInputSearch() {
     const recivedValue = ui.getCityInputValue();
     if (recivedValue === "" || recivedValue === null) {
         console.log(`Value of input "city-search-input" is null!`);
-
         return false;
     }
     weather.getCities(recivedValue)
@@ -75,5 +70,10 @@ function setLocationFromInputSearch(locationDatasetFromList) {
 
     // console.warn(country, city, region, url)
     weather.changeLocation(country, city, region, url);
+    storage.setLocationData(country, city, region, url);
     getWeather();
+
+    setTimeout( () => {
+        document.getElementById('XBtn').click();
+    }, 350);
 }

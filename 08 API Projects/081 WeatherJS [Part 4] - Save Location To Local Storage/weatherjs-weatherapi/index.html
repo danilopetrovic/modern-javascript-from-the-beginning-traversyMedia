@@ -39,7 +39,7 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="locModalLabel">Choose Location</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span id="XBtn" aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
@@ -50,15 +50,10 @@
                     </div>
                     <div class="form-group">
                         <ul id="city-list" class="list-group mt-3">
-<!--                            <li onclick="console.log(this.dataset.url)" data-url="belgrade-central-serbia-serbia" class="list-group-item  list-group-item-custom">belgrade - serbia (central serbia)</li>-->
-<!--                            <li onclick="console.log(this.dataset.url)" data-url="#url" class="list-group-item  list-group-item-custom">#name - #country (#region)</li>-->
+<!--                            <li onclick="console.log(this)" data-url="$url" data-country="country" data-city="name" data-region="region" class="list-group-item  list-group-item-custom">$name - $country - $region</li>-->
                         </ul>
                     </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button id="w-close-btn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button id="w-change-btn" type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>

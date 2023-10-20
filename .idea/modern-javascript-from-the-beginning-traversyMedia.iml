@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage/weatherjs-weatherapi" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/04 DOM Projects" />
+      <excludeFolder url="file://$MODULE_DIR$/05 Object Oriented JavaScript - ES5 &amp; ES2015" />
+      <excludeFolder url="file://$MODULE_DIR$/06 OOP Book List Project" />
+      <excludeFolder url="file://$MODULE_DIR$/07 Asynchronous JavaScript, Ajax &amp; Fetch API" />
+      <excludeFolder url="file://$MODULE_DIR$/08 API Projects" />
+      <excludeFolder url="file://$MODULE_DIR$/08 API Projects/074 Github Finder [Part 2] - Fetching Profile Data" />
+      <excludeFolder url="file://$MODULE_DIR$/08 API Projects/075 Github Finder [Part 3] -  Display The Profile" />
+      <excludeFolder url="file://$MODULE_DIR$/08 API Projects/076 Github Finder [Part 4] - Show Alert Message" />
+      <excludeFolder url="file://$MODULE_DIR$/08 API Projects/077 Github Finder [Part 5] - Fetch &amp; Display Repos" />
+      <excludeFolder url="file://$MODULE_DIR$/08 API Projects/078 WeatherJS [Part 1] - Intro &amp; UI" />
+      <excludeFolder url="file://$MODULE_DIR$/08 API Projects/079 WeatherJS [Part 2] - Fetch Weather From API" />
+      <excludeFolder url="file://$MODULE_DIR$/08 API Projects/080 WeatherJS [Part 3] - Display The Weather" />
+      <excludeFolder url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage" />
+      <excludeFolder url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage/weatherjs" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

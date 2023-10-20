@@ -48,7 +48,7 @@ class Ui {
         output = "";
         data.forEach(entry => {
             // console.log(entry);
-            const li = `<li onclick="setLocationFromInputSearch(this)" data-url="${entry.url}" data-country="${entry.country}" data-city="${entry.name}" data-region="${entry.region}" class="list-group-item  list-group-item-custom">${entry.name} - ${entry.country} - ${entry.region}</li>`;
+            const li = `<li onclick="setLocationFromInputSearch(this)" onkeypress="setLocationFromInputSearch(this)" tabindex="0" data-url="${entry.url}" data-country="${entry.country}" data-city="${entry.name}" data-region="${entry.region}" class="list-group-item  list-group-item-custom">${entry.name} - ${entry.country} - ${entry.region}</li>`;
             output += li;
         });
         this.cityList.innerHTML = output;

@@ -11,11 +11,11 @@ class Weather {
     }
 
     // Fetch weather from API
-    async getWeather() {
-        let url = `http://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=belgrade-central-serbia-serbia&days=1&aqi=yes&alerts=yes`;
-        if (this.url) {
-            url = `http://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=${this.url}&days=1&aqi=yes&alerts=yes`;
-        }
+    async getWeather(url) {
+        console.log('from weather ', url);
+        this.url = url;
+        url = `http://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=${this.url}&days=1&aqi=yes&alerts=yes`;
+
         const response = await fetch(url);
 
         const responseData = await response.json();
