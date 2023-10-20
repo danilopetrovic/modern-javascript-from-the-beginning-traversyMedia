@@ -30,7 +30,7 @@ class Ui {
     }
 
     getCityInputValue() {
-        return this.citySearchInput.value;
+        return this.citySearchInput.value.trim();
     }
 
     listCityResults(data) {
