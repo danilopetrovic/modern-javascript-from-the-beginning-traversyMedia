@@ -14,7 +14,7 @@ class Weather {
     async getWeather(url) {
         // console.log('from weather ', url);
         this.url = url;
-        url = `http://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=${this.url}&days=1&aqi=yes&alerts=yes`;
+        url = `https://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=${this.url}&days=1&aqi=yes&alerts=yes`;
 
         const response = await fetch(url);
 
@@ -33,7 +33,7 @@ class Weather {
     // Get list of Cities
     async getCities(text) {
         this.inputText = text;
-        const response = await fetch(`http://api.weatherapi.com/v1/search.json?key=${this.apiKey}&q=${this.inputText}`);
+        const response = await fetch(`https://api.weatherapi.com/v1/search.json?key=${this.apiKey}&q=${this.inputText}`);
 
         const responseData = await response.json();
         return responseData;
