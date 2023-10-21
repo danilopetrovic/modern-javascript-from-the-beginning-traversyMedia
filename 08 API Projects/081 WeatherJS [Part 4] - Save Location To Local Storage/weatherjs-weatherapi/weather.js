@@ -2,7 +2,7 @@
 class Weather {
     constructor(country, city, region, url) {
         // https://www.weatherapi.com/api-explorer.aspx
-        this.apiKey = '609c6c0e2a2e4d4fbac150629231610';
+        this.apiKey = '828440c72ba74c0eb50200723232110';
         this.country = country;
         this.city = city;
         this.region = region;
