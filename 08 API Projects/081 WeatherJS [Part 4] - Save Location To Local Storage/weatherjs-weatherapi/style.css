@@ -6,6 +6,7 @@
     margin: 10px;
     text-align: center;
 }
+
 #refresh button {
     margin: 0;
     padding: 8px;
@@ -51,4 +52,11 @@ a {
 
 #weather-image {
     transform: scale(100%);
+}
+
+@media (max-width: 1080px) {
+    .row {
+        min-height: 100vh;
+        color: #49afea;
+    }
 }
