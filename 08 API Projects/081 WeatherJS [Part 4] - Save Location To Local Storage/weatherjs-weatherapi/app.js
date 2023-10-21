@@ -26,13 +26,14 @@ document.getElementById('w-form').addEventListener('submit', (e) => {
 // Focus on city search input after clicking change location
 document.getElementById('change-location').addEventListener('click', () => {
     setTimeout(() => {
+        document.getElementById('city-search-input').value = "";
         document.getElementById('city-search-input').focus();
-    }, 500);
+    }, 700);
 });
 
 function getWeather() {
     const url = storage.getLocationData();
-    console.log('from app ', url);
+    // console.log('from app ', url);
     weather.getWeather(url)
         .then(data => {
             // console.log(data);
@@ -46,7 +47,7 @@ function getInputSearch() {
     // console.warn('odlozeno');
     const recivedValue = ui.getCityInputValue();
     if (recivedValue === "" || recivedValue === null) {
-        console.log(`Value of input "city-search-input" is null!`);
+        // console.log(`Value of input "city-search-input" is null!`);
         return false;
     }
     weather.getCities(recivedValue)

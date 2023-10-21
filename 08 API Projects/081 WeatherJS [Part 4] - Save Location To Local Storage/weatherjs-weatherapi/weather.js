@@ -12,7 +12,7 @@ class Weather {
 
     // Fetch weather from API
     async getWeather(url) {
-        console.log('from weather ', url);
+        // console.log('from weather ', url);
         this.url = url;
         url = `http://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=${this.url}&days=1&aqi=yes&alerts=yes`;
 

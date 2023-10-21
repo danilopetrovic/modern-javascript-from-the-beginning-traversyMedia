@@ -10,7 +10,7 @@ class Storage {
     getLocationData() {
         const location = JSON.parse(localStorage.getItem('weatherApp'));
         if (location !== null) {
-            console.warn(location);
+            // console.warn(location);
             this.url = location.url;
         } else {
             this.url = this.defaultUrl;
