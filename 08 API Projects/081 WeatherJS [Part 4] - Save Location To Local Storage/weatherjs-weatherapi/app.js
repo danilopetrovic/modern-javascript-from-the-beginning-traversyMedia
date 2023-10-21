@@ -15,7 +15,7 @@ document.getElementById('refresh').addEventListener('click', () => {
 let typingTimer;
 document.getElementById('city-search-input').addEventListener('keyup', () => {
     clearTimeout(typingTimer);
-    typingTimer = setTimeout(getInputSearch, 1000);
+    typingTimer = setTimeout(getInputSearch, 700);
 });
 
 // Preventing submitting form

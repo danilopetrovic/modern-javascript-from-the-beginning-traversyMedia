@@ -8,6 +8,8 @@ class Ui {
         this.feelsLike = document.getElementById('w-feels-like');
         this.pressure = document.getElementById('w-pressure');
         this.wind = document.getElementById('w-wind');
+        this.lastUpdated = document.getElementById('w-last-update');
+        this.dateNow = document.getElementById('w-date-now');
 
         // Getting inputs and buttons for changing location form
         this.citySearchInput = document.getElementById('city-search-input');
@@ -27,6 +29,27 @@ class Ui {
         this.feelsLike.textContent = `Feels like: ${current.feelslike_c}° C`;
         this.pressure.textContent = `Pressure: ${current.pressure_mb} mb`;
         this.wind.textContent = `Wind speed: ${current.wind_kph} kmph (${current.wind_mph} mph), direction ${current.wind_dir}, ${current.wind_degree}deg`;
+        this.dateNow.textContent = `Date now: ${this.getTimeNow()}`;
+        this.lastUpdated.textContent = `Last update from server: ${current.last_updated}`;
+    }
+
+    getTimeNow() {
+        // Create a new Date object for the current time in the local time zone
+        const date = new Date();
+
+        // Get the various date and time components
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        const hours = String(date.getHours()).padStart(2, '0');
+        const minutes = String(date.getMinutes()).padStart(2, '0');
+        const seconds = String(date.getSeconds()).padStart(2, '0');
+
+        // Combine the components into the desired format
+        const formattedDate = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+
+        // console.log(formattedDate);
+        return formattedDate;
     }
 
     getCityInputValue() {

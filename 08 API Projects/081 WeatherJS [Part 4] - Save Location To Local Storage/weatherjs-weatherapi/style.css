@@ -42,5 +42,13 @@
 }
 
 button:focus, li:focus {
-    border: 1px solid purple !important;
+    border: 2px solid purple !important;
+}
+
+a {
+    color: #bbb;
+}
+
+#weather-image {
+    transform: scale(100%);
 }
