@@ -2,7 +2,6 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage/weatherjs-weatherapi" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/04 DOM Projects" />
       <excludeFolder url="file://$MODULE_DIR$/05 Object Oriented JavaScript - ES5 &amp; ES2015" />
       <excludeFolder url="file://$MODULE_DIR$/06 OOP Book List Project" />
@@ -17,7 +16,10 @@
       <excludeFolder url="file://$MODULE_DIR$/08 API Projects/080 WeatherJS [Part 3] - Display The Weather" />
       <excludeFolder url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage" />
       <excludeFolder url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage/weatherjs" />
+      <excludeFolder url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage/weatherjs-weatherapi" />
     </content>
+    <content url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage" />
+    <content url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage/weatherjs-weatherapi" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
