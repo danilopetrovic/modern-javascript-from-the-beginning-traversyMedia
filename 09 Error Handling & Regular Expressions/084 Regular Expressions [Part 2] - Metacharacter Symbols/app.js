@@ -26,7 +26,11 @@ str = "H_llo World!"
 re = /h.llo/i;      // Matches any ONE character
 test(re, str, "Matches any ONE character");
 
-str = 'Hello World!';
+str = 'hllo!';
+re = /h*llo/i;      // Matches any character 0 or more times
+test(re, str, "Matches any character 0 or more times");
+
+str = 'hhhhhhhhllo!';
 re = /h*llo/i;      // Matches any character 0 or more times
 test(re, str, "Matches any character 0 or more times");
 
@@ -34,8 +38,16 @@ str = 'Gray?';
 re = /gre?a?y/i;    // Optional character
 test(re, str, "Optional character");
 
-re = /gre?a?y\?/i;    // Escape character
-test(re, str, "Escape character");
+str = 'Grey?';
+re = /gre?a?y/i;    // Optional character
+test(re, str, "Optional character");
+
+str = 'Gry?';
+re = /gre?a?y/i;    // Optional character
+test(re, str, "Optional character");
+
+re = /gre?a?y\?/i;    // Escape character. Litteral question mark so it works like string instead of optional regEx character...
+test(re, str, "Escape character. Litteral question mark so it works like string instead of optional regEx character...");
 
 // Log Results
 function test(re, str, msg) {
