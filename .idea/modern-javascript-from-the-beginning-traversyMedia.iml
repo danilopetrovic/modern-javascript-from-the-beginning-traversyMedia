@@ -17,9 +17,13 @@
       <excludeFolder url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage" />
       <excludeFolder url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage/weatherjs" />
       <excludeFolder url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage/weatherjs-weatherapi" />
+      <excludeFolder url="file://$MODULE_DIR$/09 Error Handling &amp; Regular Expressions" />
+      <excludeFolder url="file://$MODULE_DIR$/09 Error Handling &amp; Regular Expressions/082 Error Handling with Try...Catch" />
+      <excludeFolder url="file://$MODULE_DIR$/09 Error Handling &amp; Regular Expressions/083 Regular Expressions [Part 1] - Evaluation Functions" />
     </content>
     <content url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage" />
     <content url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage/weatherjs-weatherapi" />
+    <content url="file://$MODULE_DIR$/09 Error Handling &amp; Regular Expressions/084 Regular Expressions [Part 2] - Metacharacter Symbols" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
