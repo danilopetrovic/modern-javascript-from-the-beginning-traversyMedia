@@ -1,3 +1,9 @@
+/*
+TODO:
+ * Make more weather windows so every one is one instance of weather
+ * Make refresh button to be animated whyle working add/remove class refresh-animate
+*/
+
 // Init Ui object
 const ui = new Ui();
 // Init Storage object
