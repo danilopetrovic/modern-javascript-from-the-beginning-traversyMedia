@@ -31,7 +31,7 @@ UICtrl.callChangeText();
 console.log(UICtrl.text);
 
 // REVEALING MODULE PATTERN
-console.log('-----------------------STANDARD MODULE PATTERN-----------------------');
+console.log('-----------------------REVEALING MODULE PATTERN-----------------------');
 const ItemCtrl = (function () {
     let data = [];
 
