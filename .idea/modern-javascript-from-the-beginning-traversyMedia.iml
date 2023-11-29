@@ -23,12 +23,17 @@
       <excludeFolder url="file://$MODULE_DIR$/09 Error Handling &amp; Regular Expressions/084 Regular Expressions [Part 2] - Metacharacter Symbols" />
       <excludeFolder url="file://$MODULE_DIR$/10 Other Newer Features - ES2015+" />
       <excludeFolder url="file://$MODULE_DIR$/11 JavaScript Patterns" />
+      <excludeFolder url="file://$MODULE_DIR$/09 Error Handling &amp; Regular Expressions/087 Regular Expressions - Form Validation Project" />
+      <excludeFolder url="file://$MODULE_DIR$/12 Tracalorie Project (Using The Module Pattern)" />
+      <excludeFolder url="file://$MODULE_DIR$/12 Tracalorie Project (Using The Module Pattern)/102 Creating The UI With Materialize CSS" />
+      <excludeFolder url="file://$MODULE_DIR$/12 Tracalorie Project (Using The Module Pattern)/103 Controllers &amp; Data Structure" />
     </content>
     <content url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage" />
     <content url="file://$MODULE_DIR$/08 API Projects/081 WeatherJS [Part 4] - Save Location To Local Storage/weatherjs-weatherapi" />
     <content url="file://$MODULE_DIR$/09 Error Handling &amp; Regular Expressions/084 Regular Expressions [Part 2] - Metacharacter Symbols" />
     <content url="file://$MODULE_DIR$/09 Error Handling &amp; Regular Expressions/087 Regular Expressions - Form Validation Project" />
     <content url="file://$MODULE_DIR$/11 JavaScript Patterns/099 Mediator Pattern" />
+    <content url="file://$MODULE_DIR$/12 Tracalorie Project (Using The Module Pattern)/104 Get &amp; Populate Items" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
